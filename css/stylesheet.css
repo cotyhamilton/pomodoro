@@ -71,3 +71,15 @@ body {
 .fa-check {
     float: right;
 }
+
+.footer {
+    margin-top: 36px;
+    height: 36px;
+    color: #555;
+    text-align: left;
+}
+
+.footer p {
+    padding-top: 12px;
+    font-weight: 200;
+}

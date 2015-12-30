@@ -5,6 +5,8 @@ $(document).ready(function() {
         breakMinutes = 10,
         saveBreakMinutes = breakMinutes,
         breakSeconds = 0,
+        timer = new Audio('timer.wav'),
+        minute = new Audio('minute.wav'),
         handle = setInterval(countDownWork, 1000);
     
     function countDownWork() {
@@ -17,10 +19,14 @@ $(document).ready(function() {
             workMinutes = saveWorkMinutes;
             $('.work-minutes').text(workMinutes);
             $('.work-seconds').text("0" + workSeconds);
+            timer.play();
             return;
         }
         else if (workSeconds == 0) {
             workMinutes--;
+            if (workMinutes != saveWorkMinutes - 1) {
+                minute.play();
+            }
             workSeconds = 60;
         }
         workSeconds--;
@@ -43,10 +49,14 @@ $(document).ready(function() {
             breakMinutes = saveBreakMinutes;
             $('.break-minutes').text(breakMinutes);
             $('.break-seconds').text("0" + workSeconds);
+            timer.play();
             return;
         }
         else if (breakSeconds == 0) {
             breakMinutes--;
+            if (breakMinutes != saveBreakMinutes - 1) {
+                minute.play();
+            }
             breakSeconds = 60;
         }
         breakSeconds--;

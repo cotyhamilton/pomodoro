@@ -1,0 +1,70 @@
+body {
+    background-color: #efefef;
+    color: #efefef;
+    text-align: center;
+}
+
+.work {
+    margin-top: 30px;
+    border-radius: 12px;
+    background-color: #36CC7C;
+}
+
+.break {
+    margin-top: 30px;
+    border-radius: 12px;
+    background-color: #E05858;
+}
+
+.minutes {
+    font-size: 10em;
+    font-weight: 500;
+}
+
+.seconds {
+    font-size: 3em;
+}
+
+.work p {
+    margin: 10px;
+    display: inline;
+}
+
+.break p {
+    display: inline;
+    margin: 10px
+}
+
+.input {
+    cursor: pointer;
+    padding-top: 70px;
+    font-size: 3em;
+}
+
+.minus {
+    float: left;
+}
+
+.plus {
+    float: right;
+}
+
+.start-stop {
+    margin-top: 30px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #72D4DF;
+}
+
+.start-stop i {
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+.fa-trash {
+    float: left;
+}
+
+.fa-check {
+    float: right;
+}
